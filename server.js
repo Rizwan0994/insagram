@@ -3,7 +3,7 @@ const express = require('express')
   const flash = require('express-flash')
   const session = require('express-session')
   const methodOverride = require('method-override')
-  const Login=require("./signup.js")
+  const Login=require("./signup")
   //db conection
   const mongoose=require('mongoose');
   const url="mongodb+srv://Rizwanx:1234@cluster0.l9rkzno.mongodb.net/Insagram?retryWrites=true&w=majority"
@@ -19,14 +19,14 @@ app.use(express.static(__dirname));
    //new 
 
  
-   app.get('/home', function(req, res) { 
-    res.render('home');
-    });
    app.get('/', function(req, res) { 
-       res.render('index');
+    res.render('index');
+    });
+   app.get('/insta', function(req, res) { 
+       res.render('insta');
    });
    app.get('/login', function(req, res) { 
-    res.render('second');
+    res.render('login');
 });
 
   app.post('/login',  async (req, res) => {
@@ -51,10 +51,6 @@ app.use(express.static(__dirname));
 
   
 
-  app.get('/login', (req, res) => {
-    res.render('login.ejs')
-  })
-  
 
 
   app.post('/login', (req, res, next) => {
