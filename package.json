@@ -1,0 +1,23 @@
+{
+  "name": "instagram-login-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "gh-pages -d ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.6.1"
+  }
+}
