@@ -5,3 +5,5 @@ console.log('hello to the moon") //my new commit
 funtion main(){
 return null;
 }
+main()
+//console.log(main())
